@@ -179,9 +179,9 @@ class DataDragonAPI
 		if (!self::$cache)
 		{
 			$cacheInterface = new FilesystemAdapter(
-				Cache::DATADRAGON_NAMESPACE,
-				Cache::LIFETIME,
-				Cache::getDirectoryPath()
+				"RiotAPI-DataDragon",           // namespace
+				0,                              // default lifetime
+				sys_get_temp_dir() . "/DDragon" // directory
 			);
 			self::setCacheInterface($cacheInterface);
 		}

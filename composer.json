@@ -1,8 +1,8 @@
 {
-	"name": "dolejska-daniel/riot-api",
+	"name": "dolejska-daniel/riot-api-datadragon",
 	"type": "library",
-	"description": "Riot League of Legends & DataDragon API wrapper for PHP7",
-	"keywords": ["riot", "league of legends", "data dragon", "api", "wrapper", "php7"],
+	"description": "Riot DataDragon API wrapper for PHP7",
+	"keywords": ["riot", "data dragon", "api", "wrapper", "php7"],
 	"homepage": "https://github.com/dolejska-daniel/riot-api",
 	"license": "GPL-3.0-or-later",
 	"authors": [
@@ -12,27 +12,25 @@
 			"role": "Developer"
 		}
 	],
+	"scripts": {
+		"test": "vendor/bin/phpunit -v --bootstrap phpunit.php --configuration phpunit.xml --coverage-text --coverage-html build/coverage"
+	},
 	"require": {
-		"nette/utils": "^2|^3",
+		"nette/utils": "^3",
 		"guzzlehttp/guzzle": "^7|^6",
-		"symfony/console": "^4|^5",
-		"symfony/cache": ">=4.3.8",
+		"symfony/console": "^5",
+		"symfony/cache": "^5",
 		"psr/cache": "^1",
-		"php": ">=7.1",
+		"php": ">=7.3",
 		"ext-json": "*"
 	},
 	"require-dev": {
-		"phpunit/phpunit": "^6"
+		"phpunit/phpunit": "^9"
 	},
 	"autoload": {
 		"psr-4": {
-			"RiotAPI\\LeagueAPI\\": "src/LeagueAPI",
-			"RiotAPI\\LeagueAPICLI\\": "src/LeagueAPICLI",
 			"RiotAPI\\DataDragonAPI\\": "src/DataDragonAPI"
 		}
 	},
-	"bin": [
-		"src/LeagueAPICLI/leagueapicli"
-	],
 	"minimum-stability": "stable"
 }

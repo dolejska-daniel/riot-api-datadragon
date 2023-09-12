@@ -15,7 +15,7 @@
 	"repositories": [
 		{
 			"type": "vcs",
-			"url": "https://github.com/D0L1K/riot-api-base"
+			"url": "https://github.com/D0L1K/riot-api-league"
 		}
 	],
 	"require": {

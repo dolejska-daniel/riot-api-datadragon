@@ -12,9 +12,15 @@
 			"role": "Developer"
 		}
 	],
+	"repositories": [
+		{
+			"type": "vcs",
+			"url": "https://github.com/D0L1K/riot-api-base"
+		}
+	],
 	"require": {
 		"nette/utils": "v4",
-		"dolejska-daniel/riot-api-league": "^2",
+		"dolejska-daniel/riot-api-league": "1.0.0",
 		"php": ">=8.1",
 		"ext-json": "*"
 	},

@@ -20,7 +20,7 @@
 	],
 	"require": {
 		"nette/utils": "v4",
-		"dolejska-daniel/riot-api-league": "1.0.0",
+		"dolejska-daniel/riot-api-league": "1.0.1",
 		"php": ">=8.1",
 		"ext-json": "*"
 	},
